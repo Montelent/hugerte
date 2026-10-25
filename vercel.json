@@ -1,4 +1,4 @@
 {
-  "buildCommand": "yarn build && mkdir -p public && cp -r modules/hugerte/js/* public/",
+  "buildCommand": "yarn build && rm -rf public && mkdir -p public && cp -a modules/hugerte/js/. public/",
   "outputDirectory": "public"
 }
