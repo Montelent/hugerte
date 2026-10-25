@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HugeRTE Demo</title>
+  <script src="/hugerte.min.js"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>HugeRTE Demo</h1>
+  <p>Self-hosted build from this Vercel deployment.</p>
+  <textarea id="editor">Hello from <strong>HugeRTE</strong>!</textarea>
+
+  <script>
+    hugerte.init({
+      selector: '#editor',
+      height: 400,
+      menubar: true,
+      plugins: 'lists link image table code fullscreen help',
+      toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright | bullist numlist | link image table | code fullscreen'
+    });
+  </script>
+</body>
+</html>
